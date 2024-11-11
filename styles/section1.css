@@ -1,0 +1,145 @@
+@media (min-width: 1200px) {
+  .section.one h1 {
+    width: 61vw;
+    margin-top: 62px;
+    font-size: 7vw;
+  }
+  .section.one p {
+    width: 60vw;
+    font-size: 1.67vw;
+  }
+  .section.one .soc-block img {
+    width: 4.6vw;
+  }
+  .section.one .background-oblako {
+    width: 42.8vw;
+    height: 28.5vw;
+    filter: blur(105px);
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .section.one h1 {
+    width: 71vw;
+    font-size: 8vw;
+    margin-top: 42px;
+  }
+  .section.one p {
+    width: 75vw;
+  }
+  .section.one .soc-block img {
+    width: 6vw;
+  }
+  .section.one .background-oblako {
+    width: 42.8vw;
+    height: 28.5vw;
+    filter: blur(105px);
+  }
+}
+@media (max-width: 768px) {
+  .section.one h1 {
+    width: 80vw;
+    font-size: 8vw;
+    margin-top: 22px;
+  }
+  .section.one p {
+    width: 80vw;
+    font-size: 3vw;
+  }
+  .section.one .soc-block img {
+    width: 10vw;
+  }
+  .section.one .background-oblako {
+    width: 80.8vw;
+    height: 50.5vw;
+    filter: blur(50px);
+  }
+}
+.section.one {
+  position: relative;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  width: 100wv;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.section.one span {
+  z-index: 2;
+  display: block;
+  width: 90vw;
+  height: 1px;
+  background-color: #eff1ed;
+}
+.section.one h1 {
+  animation: anim_header 0.8s ease;
+  text-align: center;
+  z-index: 2;
+  margin-bottom: 17px;
+  font-family: "BICRO";
+  color: #eff1ed;
+  -webkit-text-stroke: 1px #eff1ed;
+  text-stroke: 1px #eff1ed;
+  text-transform: uppercase;
+  text-shadow: #A0D2E8 0 0 9px;
+}
+.section.one p {
+  animation: anim2 0.8s ease;
+  text-align: center;
+  z-index: 2;
+  font-weight: bold;
+  color: #eff1ed;
+  font-family: "MONO";
+  margin-bottom: 36px;
+}
+.section.one .soc-block {
+  animation: anim2 0.8s ease;
+  z-index: 2;
+  display: flex;
+  gap: 37px;
+  margin-bottom: 36px;
+}
+.section.one .background-oblako {
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes anim_header {
+  from {
+    margin-left: -3000px;
+  }
+  to {
+    margin-left: 0;
+  }
+  50% {
+    filter: blur(2px);
+  }
+  90% {
+    filter: blur(1px);
+  }
+  95% {
+    filter: blur(0.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@keyframes anim2 {
+  from {
+    margin-right: -3000px;
+  }
+  to {
+    margin-left: 0;
+  }
+  50% {
+    filter: blur(2px);
+  }
+  90% {
+    filter: blur(0.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+/*# sourceMappingURL=section1.css.map */

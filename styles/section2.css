@@ -1,0 +1,134 @@
+.section.two {
+  background-color: #eff1ed;
+}
+.section.two .section2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #242424;
+  display: flex;
+}
+.section.two .section2 .block1 {
+  width: 40vw;
+  border-right: 2px solid #242424;
+}
+.section.two .section2 .block1 h1 {
+  margin: 18px 0 16px 31px;
+  font-family: "MONO";
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #242424;
+  text-stroke: 1px #242424;
+}
+.section.two .section2 .block1 p {
+  margin-left: 31px;
+  margin-bottom: 39px;
+  font-family: "MONO";
+  font-size: 24px;
+  font-weight: bold;
+}
+.section.two .section2 .block2 {
+  width: 20vw;
+}
+.section.two .section2 .block3 {
+  width: 40vw;
+  border-left: 2px solid #242424;
+}
+.section.two .section2 .block3 h1 {
+  margin: 18px 0 16px 31px;
+  font-family: "MONO";
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #242424;
+  text-stroke: 1px #242424;
+}
+.section.two .section2 .block3 p {
+  margin-left: 31px;
+  margin-bottom: 39px;
+  font-family: "MONO";
+  font-size: 24px;
+  font-weight: bold;
+}
+.section.two .section1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #242424;
+}
+.section.two .section1 h1 {
+  margin: 18px 0 16px 31px;
+  font-family: "MONO";
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #242424;
+  text-stroke: 1px #242424;
+}
+.section.two .section1 p {
+  margin-left: 31px;
+  margin-bottom: 39px;
+  font-family: "MONO";
+  font-size: 24px;
+  font-weight: bold;
+}
+.section.two header {
+  padding: 46px 0;
+  display: flex;
+  gap: 48px;
+  width: 100vw;
+  font-family: "BICRO";
+  -webkit-text-stroke: 2px #242424;
+  text-stroke: 2px #242424;
+  justify-content: center;
+  border-bottom: 2px solid #242424;
+}
+.section.two header .header-skill2 {
+  color: #eff1ed;
+}
+
+@media (min-width: 1200px) {
+  .section.two header {
+    font-size: 5.3vw;
+    gap: 4vw;
+  }
+  .section.two .section1 h1 {
+    margin: 1.5vw 0 1.3vw 2.6vw;
+    font-size: 3vw;
+  }
+  .section.two .section1 p {
+    margin-left: 2.6vw;
+    margin-bottom: 3.3vw;
+    font-size: 2vw;
+  }
+  .section.two .section2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #242424;
+    display: flex;
+  }
+  .section.two .section2 .block1 {
+    width: 40vw;
+    border-right: 2px solid #242424;
+  }
+  .section.two .section2 .block1 h1 {
+    margin: 1.5vw 0 1.3vw 2.6vw;
+    font-size: 3vw;
+  }
+  .section.two .section2 .block1 p {
+    margin-left: 2.6vw;
+    margin-bottom: 3.3vw;
+    font-size: 2vw;
+  }
+  .section.two .section2 .block2 {
+    width: 20vw;
+  }
+  .section.two .section2 .block3 {
+    width: 40vw;
+    border-left: 2px solid #242424;
+  }
+  .section.two .section2 .block3 h1 {
+    margin: 1.5vw 0 1.3vw 2.6vw;
+    font-size: 3vw;
+  }
+  .section.two .section2 .block3 p {
+    margin-left: 2.6vw;
+    margin-bottom: 3.3vw;
+    font-size: 2vw;
+  }
+}
+
+/*# sourceMappingURL=section2.css.map */

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "BICRO";
+  src: url("../fonts/BICRODEPERSONALUSE.ttf");
+}
+@font-face {
+  font-family: "MONO";
+  src: url("../fonts/RobotoMono-VariableFont_wght.ttf");
+}
+body {
+  background-color: #eff1ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
