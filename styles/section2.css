@@ -47,6 +47,19 @@
 }
 .section.two .section2 .block2 {
   width: 20vw;
+  position: relative;
+  overflow: hidden;
+}
+.section.two .section2 .block2 img {
+  position: absolute;
+  width: 100%;
+  top: -25%;
+  left: 0;
+}
+.section.two .section2 .block2 model-viewer {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 .section.two .section2 .block3 {
   width: 40vw;
@@ -196,8 +209,8 @@
     display: flex;
   }
   .section.two .section2 .block1 {
-    width: 40vw;
-    border-right: 2px solid #242424;
+    width: 50vw;
+    border-right: 1px solid #242424;
   }
   .section.two .section2 .block1 h1 {
     margin: 1.5vw 0 1.3vw 2.6vw;
@@ -209,11 +222,11 @@
     font-size: 3vw;
   }
   .section.two .section2 .block2 {
-    width: 20vw;
+    display: none;
   }
   .section.two .section2 .block3 {
-    width: 40vw;
-    border-left: 2px solid #242424;
+    width: 50vw;
+    border-left: 1px solid #242424;
   }
   .section.two .section2 .block3 h1 {
     margin: 1.5vw 0 1.3vw 2.6vw;
@@ -223,6 +236,20 @@
     margin-left: 2.6vw;
     margin-bottom: 3.3vw;
     font-size: 3vw;
+  }
+}
+@media (max-width: 400px) {
+  .section.two .section2 {
+    flex-direction: column;
+  }
+  .section.two .section2 .block1 {
+    width: 100vw;
+    border-right: 0 solid #242424;
+    border-bottom: 2px solid #242424;
+  }
+  .section.two .section2 .block3 {
+    width: 100vw;
+    border-left: 0px solid #242424;
   }
 }
 
