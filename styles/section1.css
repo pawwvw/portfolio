@@ -38,15 +38,16 @@
 @media (max-width: 768px) {
   .section.one h1 {
     width: 80vw;
-    font-size: 8vw;
+    font-size: 10.3vw;
     margin-top: 22px;
+    text-shadow: #A0D2E8 0 0 4px;
   }
   .section.one p {
     width: 80vw;
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .section.one .soc-block img {
-    width: 10vw;
+    width: 15vw;
   }
   .section.one .background-oblako {
     width: 80.8vw;
