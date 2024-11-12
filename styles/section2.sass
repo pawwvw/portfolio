@@ -92,11 +92,12 @@ $base-blue: #A0D2E8
 
 
 
-@media (min-width: 320px)
+@media (min-width: 600px)
   .section.two
     header
       font-size: 5.3vw
       gap: 4vw
+      padding: 3.8vw
     .section3
       h1
         margin: 1.5vw 0 1.3vw 2.6vw
@@ -140,3 +141,57 @@ $base-blue: #A0D2E8
           margin-left: 2.6vw
           margin-bottom: 3.3vw
           font-size: 2vw
+
+@media (max-width: 600px)
+  .section.two
+    header
+      font-size: 9vw
+      gap: 6vw
+      padding: 3.8vw
+      .header-skill3
+        display: none
+    .section3
+      h1
+        margin: 1.5vw 0 1.3vw 2.6vw
+        font-size: 5vw
+      .text-block
+        margin-bottom: 3.3vw
+        margin-left: 2.6vw
+        font-size: 3vw
+        gap: 1.25vw
+        flex-direction: column
+
+    .section1
+      h1
+        margin: 1.5vw 0 1.3vw 2.6vw
+        font-size: 5vw
+      p
+        margin-left: 2.6vw
+        margin-bottom: 3.3vw
+        font-size: 3vw
+    .section2
+      text-transform: uppercase
+      border-bottom: 2px solid $base-color-dark
+      display: flex
+      .block1
+        width: 40vw
+        border-right: 2px solid $base-color-dark
+        h1
+          margin: 1.5vw 0 1.3vw 2.6vw
+          font-size: 5vw
+        p
+          margin-left: 2.6vw
+          margin-bottom: 3.3vw
+          font-size: 3vw
+      .block2
+        width: 20vw
+      .block3
+        width: 40vw
+        border-left: 2px solid $base-color-dark
+        h1
+          margin: 1.5vw 0 1.3vw 2.6vw
+          font-size: 5vw
+        p
+          margin-left: 2.6vw
+          margin-bottom: 3.3vw
+          font-size: 3vw

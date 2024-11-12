@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .section.one h1 {
     width: 61vw;
     margin-top: 62px;
@@ -17,7 +17,7 @@
     filter: blur(105px);
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 500px) and (max-width: 900px) {
   .section.one h1 {
     width: 71vw;
     font-size: 8vw;
@@ -32,10 +32,10 @@
   .section.one .background-oblako {
     width: 42.8vw;
     height: 28.5vw;
-    filter: blur(105px);
+    filter: blur(80px);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .section.one h1 {
     width: 80vw;
     font-size: 10.3vw;
@@ -47,7 +47,7 @@
     font-size: 4vw;
   }
   .section.one .soc-block img {
-    width: 15vw;
+    width: 12vw;
   }
   .section.one .background-oblako {
     width: 80.8vw;
@@ -76,6 +76,7 @@
   animation: anim_header 0.8s ease;
   text-align: center;
   z-index: 2;
+  width: 100%;
   margin-bottom: 17px;
   font-family: "BICRO";
   color: #eff1ed;
