@@ -1,0 +1,39 @@
+.desktop footer {
+  padding: 4.167vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  position: relative;
+  overflow: hidden;
+}
+.desktop footer img {
+  position: absolute;
+  filter: blur(5vw);
+  width: 12vw;
+  height: 13.083vw;
+}
+.desktop footer .img_1 {
+  left: -2.5vw;
+  bottom: -6.5vw;
+}
+.desktop footer .img_2 {
+  top: -4.083vw;
+  right: -5.25vw;
+}
+.desktop footer p {
+  font-family: "MONO";
+  color: #eff1ed;
+  text-shadow: #A0D2E8 0 0 0.583vw;
+  font-size: 1.167vw;
+}
+.desktop footer p a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #eff1ed;
+}
+.desktop footer p a:hover, .desktop footer p a:active {
+  color: #eff1ed;
+}
+
+/*# sourceMappingURL=footer.css.map */

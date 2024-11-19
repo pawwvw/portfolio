@@ -1,0 +1,104 @@
+$base-color-light: #eff1ed
+$base-color-dark: #242424
+$base-font: "BICRO"
+$secondary-font: "MONO"
+$base-blue: #A0D2E8
+
+.desktop .section.three
+  background-color: $base-color-dark
+  color: $base-color-light
+  padding-top: 1.833vw
+  padding-bottom: 3.167vw
+  .header
+    font-family: $base-font
+    text-align: center
+    font-size: 5.333vw
+    display: flex
+    flex-direction: column
+    margin-bottom: 6.667vw
+    h1
+      text-stroke: 0.167vw $base-color-light
+      -webkit-text-stroke: 0.167vw $base-color-light
+    ._1
+      opacity: 74%
+      color: $base-color-dark
+      margin-bottom: -3.333vw
+    ._2
+      position: relative
+      color: $base-color-dark
+      margin-bottom: -3.333vw
+    ._3
+      z-index: 3
+  .container
+    display: flex
+    margin-left: 2.583vw
+    gap: 5.333vw
+
+    .img_container
+      position: relative
+      .click
+        position: absolute
+        top: -4.167vw
+        width: 3.917vw
+        height: 4.667vw
+        left: 15vw
+        display: none
+
+      .img_block
+        position: relative
+        background-color: $base-color-dark
+        width: 15.25vw
+        height: 21.167vw
+        z-index: 4
+        padding: 0.25vw
+        border-radius: 2.917vw
+        border: 0.083vw solid $base-color-light
+        transition: transform 0.1s ease-out
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+          position: relative
+          border-radius: 2.917vw
+          z-index: 4
+          width: 100%
+          height: 100%
+      .back
+        z-index: 0
+        width: 15.25vw
+        height: 21.167vw
+        border-radius: 2.917vw
+        border: 0.083vw solid $base-color-light
+        position: absolute
+        top: -1vw
+        left: 1vw
+    .img_container:hover
+      cursor: pointer
+    .img_container:active
+      cursor: pointer
+      .click
+        display: block
+      .img_block
+       transform: translate3d(0.667vw, -0.667vw, 0)
+    .text_container
+      display: flex
+      gap: 4.667vw
+      color: $base-color-light
+      .text
+        h1
+          font-size: 3vw
+          font-family: $secondary-font
+          font-weight: bold
+          -webkit-text-stroke: 0.083vw $base-color-light
+          text-stroke: 0.083vw $base-color-light
+          text-transform: uppercase
+        p
+          font-size: 2vw
+          font-family: $secondary-font
+          font-weight: bold
+        .hider
+          margin-top: 0.833vw
+          font-size: 1vw
+          font-family: $secondary-font
+          font-weight: normal
+          color: #ababab

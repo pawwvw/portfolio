@@ -4,44 +4,45 @@ $base-font: "BICRO"
 $secondary-font: "MONO"
 $base-blue: #A0D2E8
 
-.section.two
+.desktop .section.two
   background-color: $base-color-light
+  color: $base-color-dark
   .section3
-    border-bottom: 2px solid $base-color-dark
+    border-bottom: 0.167vw solid $base-color-dark
     h1
-      margin: 18px 0 16px 31px
+      margin: 1.5vw 0 1.3vw 2.6vw
+      font-size: 3vw
       font-family: $secondary-font
-      font-size: 36px
       font-weight: bold
-      -webkit-text-stroke: 1px $base-color-dark
-      text-stroke: 1px $base-color-dark
+      -webkit-text-stroke: 0.083vw $base-color-dark
+      text-stroke: 0.083vw $base-color-dark
     .text-block
-      margin-left: 31px
-      margin-bottom: 39px
+      margin-bottom: 3.3vw
+      margin-left: 2.6vw
+      font-size: 1.7vw
+      gap: 1.25vw
       font-family: $secondary-font
       font-weight: bold
       display: flex
-      font-size: 20px
-      gap: 15px
   .section2
     text-transform: uppercase
-    border-bottom: 2px solid $base-color-dark
+    border-bottom: 0.167vw solid $base-color-dark
     display: flex
     .block1
       width: 40vw
-      border-right: 2px solid $base-color-dark
+      border-right: 0.167vw solid $base-color-dark
       h1
-        margin: 18px 0 16px 31px
+        margin: 1.5vw 0 1.3vw 2.6vw
+        font-size: 3vw
         font-family: $secondary-font
-        font-size: 36px
         font-weight: bold
-        -webkit-text-stroke: 1px $base-color-dark
-        text-stroke: 1px $base-color-dark
+        -webkit-text-stroke: 0.083vw $base-color-dark
+        text-stroke: 0.083vw $base-color-dark
       p
-        margin-left: 31px
-        margin-bottom: 39px
+        margin-left: 2.6vw
+        margin-bottom: 3.3vw
+        font-size: 2vw
         font-family: $secondary-font
-        font-size: 24px
         font-weight: bold
     .block2
       width: 20vw
@@ -52,171 +53,52 @@ $base-blue: #A0D2E8
         width: 100%
         top: -25%
         left: 0
-
       model-viewer
         z-index: 2
         width: 100%
         height: 100%
     .block3
       width: 40vw
-      border-left: 2px solid $base-color-dark
-      h1
-        margin: 18px 0 16px 31px
-        font-family: $secondary-font
-        font-size: 36px
-        font-weight: bold
-        -webkit-text-stroke: 1px $base-color-dark
-        text-stroke: 1px $base-color-dark
-      p
-        margin-left: 31px
-        margin-bottom: 39px
-        font-family: $secondary-font
-        font-size: 24px
-        font-weight: bold
-  .section1
-    text-transform: uppercase
-    border-bottom: 2px solid $base-color-dark
-    h1
-      margin: 18px 0 16px 31px
-      font-family: $secondary-font
-      font-size: 36px
-      font-weight: bold
-      -webkit-text-stroke: 1px $base-color-dark
-      text-stroke: 1px $base-color-dark
-    p
-      margin-left: 31px
-      margin-bottom: 39px
-      font-family: $secondary-font
-      font-size: 24px
-      font-weight: bold
-  header
-    padding: 46px 0
-    display: flex
-    gap: 48px
-    font-family: $base-font
-    width: 100%
-    -webkit-text-stroke: 2px $base-color-dark
-    text-stroke: 2px $base-color-dark
-    justify-content: center
-    border-bottom: 2px solid $base-color-dark
-    .header-skill2
-      color: $base-color-light
-
-
-
-@media (min-width: 600px)
-  .section.two
-    header
-      font-size: 5.3vw
-      gap: 4vw
-      padding: 3.8vw
-    .section3
+      border-left: 0.167vw solid $base-color-dark
       h1
         margin: 1.5vw 0 1.3vw 2.6vw
         font-size: 3vw
-      .text-block
-        margin-bottom: 3.3vw
-        margin-left: 2.6vw
-        font-size: 1.7vw
-        gap: 1.25vw
-    .section1
-      h1
-        margin: 1.5vw 0 1.3vw 2.6vw
-        font-size: 3vw
+        font-family: $secondary-font
+        font-weight: bold
+        -webkit-text-stroke: 0.083vw $base-color-dark
+        text-stroke: 0.083vw $base-color-dark
       p
         margin-left: 2.6vw
         margin-bottom: 3.3vw
         font-size: 2vw
-    .section2
-      text-transform: uppercase
-      border-bottom: 2px solid $base-color-dark
-      display: flex
-      .block1
-        width: 40vw
-        border-right: 2px solid $base-color-dark
-        h1
-          margin: 1.5vw 0 1.3vw 2.6vw
-          font-size: 3vw
-        p
-          margin-left: 2.6vw
-          margin-bottom: 3.3vw
-          font-size: 2vw
-      .block2
-        width: 20vw
-      .block3
-        width: 40vw
-        border-left: 2px solid $base-color-dark
-        h1
-          margin: 1.5vw 0 1.3vw 2.6vw
-          font-size: 3vw
-        p
-          margin-left: 2.6vw
-          margin-bottom: 3.3vw
-          font-size: 2vw
-
-@media (max-width: 600px)
-  .section.two
-    header
-      font-size: 9vw
-      gap: 6vw
-      padding: 3.8vw
-      .header-skill3
-        display: none
-    .section3
-      h1
-        margin: 1.5vw 0 1.3vw 2.6vw
-        font-size: 5vw
-      .text-block
-        margin-bottom: 3.3vw
-        margin-left: 2.6vw
-        font-size: 3vw
-        gap: 1.25vw
-        flex-direction: column
-
-    .section1
-      h1
-        margin: 1.5vw 0 1.3vw 2.6vw
-        font-size: 5vw
-      p
-        margin-left: 2.6vw
-        margin-bottom: 3.3vw
-        font-size: 3vw
-    .section2
-      text-transform: uppercase
-      border-bottom: 2px solid $base-color-dark
-      display: flex
-      .block1
-        width: 50vw
-        border-right: 1px solid $base-color-dark
-        h1
-          margin: 1.5vw 0 1.3vw 2.6vw
-          font-size: 5vw
-        p
-          margin-left: 2.6vw
-          margin-bottom: 3.3vw
-          font-size: 3vw
-      .block2
-        display: none
-      .block3
-        width: 50vw
-        border-left: 1px solid $base-color-dark
-        h1
-          margin: 1.5vw 0 1.3vw 2.6vw
-          font-size: 5vw
-        p
-          margin-left: 2.6vw
-          margin-bottom: 3.3vw
-          font-size: 3vw
-
-
-@media (max-width: 400px)
-  .section.two
-    .section2
-      flex-direction: column
-      .block1
-        width: 100vw
-        border-right: 0 solid $base-color-dark
-        border-bottom: 2px solid $base-color-dark
-      .block3
-        width: 100vw
-        border-left: 0px solid $base-color-dark
+        font-family: $secondary-font
+        font-weight: bold
+  .section1
+    text-transform: uppercase
+    border-bottom: 0.167vw solid $base-color-dark
+    h1
+      margin: 1.5vw 0 1.3vw 2.6vw
+      font-size: 3vw
+      font-family: $secondary-font
+      font-weight: bold
+      -webkit-text-stroke: 0.083vw $base-color-dark
+      text-stroke: 0.083vw $base-color-dark
+    p
+      margin-left: 2.6vw
+      margin-bottom: 3.3vw
+      font-size: 2vw
+      font-family: $secondary-font
+      font-weight: bold
+  header
+    display: flex
+    font-size: 5.3vw
+    gap: 4vw
+    padding: 3.8vw
+    font-family: $base-font
+    width: 100%
+    -webkit-text-stroke: 0.167vw $base-color-dark
+    text-stroke: 0.167vw $base-color-dark
+    justify-content: center
+    border-bottom: 0.167vw solid $base-color-dark
+    .header-skill2
+      color: $base-color-light

@@ -1,0 +1,7 @@
+import '../styles/reset.css'
+import '../styles/main.css'
+import '../styles/section1.css'
+import '../styles/section2.css'
+import '../styles/section3.css'
+import '../styles/section4.css'
+import '../styles/footer.css'

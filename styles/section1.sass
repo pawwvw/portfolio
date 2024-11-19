@@ -4,59 +4,8 @@ $base-font: "BICRO"
 $secondary-font: "MONO"
 $base-blue: #A0D2E8
 
-@media (min-width: 900px)
-  .section.one
-    h1
-      width: 61vw
-      margin-top: 62px
-      font-size: 7vw
-    p
-      width: 60vw
-      font-size: 1.67vw
-    .soc-block
-      img
-        width: 4.6vw
-    .background-oblako
-      width: 42.8vw
-      height: 28.5vw
-      filter: blur(105px)
 
-@media (min-width: 500px) and (max-width: 900px)
-  .section.one
-    h1
-      width: 71vw
-      font-size: 8vw
-      margin-top: 42px
-    p
-      width: 75vw
-
-    .soc-block
-      img
-        width: 6vw
-    .background-oblako
-      width: 42.8vw
-      height: 28.5vw
-      filter: blur(80px)
-
-@media (max-width: 500px)
-  .section.one
-    h1
-      width: 80vw
-      font-size: 10.3vw
-      margin-top: 22px
-      text-shadow: $base-blue 0 0 4px
-    p
-      width: 80vw
-      font-size: 4vw
-    .soc-block
-      img
-        width: 12vw
-    .background-oblako
-      width: 80.8vw
-      height: 50.5vw
-      filter: blur(50px)
-
-.section.one
+.desktop .section.one
   position: relative
   background-color: $base-color-dark
   display: flex
@@ -64,43 +13,55 @@ $base-blue: #A0D2E8
   width: 100wv
   align-items: center
   justify-content: center
-  padding: 30px 0
+  padding: 2.5vw 0
   span
     z-index: 2
     display: block
     width: 90vw
-    height: 1px
+    height: 0.083vw
     background-color: $base-color-light
   h1
     animation: anim_header 0.8s ease
     text-align: center
     z-index: 2
-    width: 100%
-    margin-bottom: 17px
+    margin-top: 5.1666vw
+    font-size: 9.5vw
+    margin-bottom: 1.41666vw
     font-family: $base-font
     color: $base-color-light
-    -webkit-text-stroke: 1px $base-color-light
-    text-stroke: 1px $base-color-light
+    -webkit-text-stroke: 0.083vw $base-color-light
+    text-stroke: 0.083vw $base-color-light
     text-transform: uppercase
-    text-shadow: $base-blue 0 0 9px
+    text-shadow: $base-blue 0 0 0.75vw
   p
     animation: anim2 0.8s ease
     text-align: center
     z-index: 2
     font-weight: bold
+    width: 60vw
+    font-size: 1.67vw
     color: $base-color-light
     font-family: $secondary-font
-    margin-bottom: 36px
+    margin-bottom: 3vw
+    a, a:hover, a:active
+      cursor: pointer
+      text-decoration: underline
+      color: $base-color-light
   .soc-block
     animation: anim2 0.8s ease
     z-index: 2
     display: flex
-    gap: 37px
-    margin-bottom: 36px
+    gap: 3vw
+    margin-bottom: 3vw
+    img
+      width: 4.6vw
   .background-oblako
+    width: 42.8vw
+    height: 28.5vw
     position: absolute
     z-index: 1
-
+    filter: blur(8.75vw)
+    animation: rotate 5s linear infinite, pulse 2s ease-in-out infinite
 
 @keyframes anim_header
   from
@@ -127,3 +88,16 @@ $base-blue: #A0D2E8
     filter: blur(0.5px)
   100%
     filter: blur(0px)
+
+@keyframes rotate
+  0%
+    transform: rotate(0deg) translateX(50px)
+  100%
+    transform: rotate(360deg) translateX(50px)
+
+@keyframes pulse
+  0%, 100%
+    opacity: 0.6
+
+  50%
+    opacity: 1

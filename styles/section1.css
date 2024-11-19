@@ -1,61 +1,4 @@
-@media (min-width: 900px) {
-  .section.one h1 {
-    width: 61vw;
-    margin-top: 62px;
-    font-size: 7vw;
-  }
-  .section.one p {
-    width: 60vw;
-    font-size: 1.67vw;
-  }
-  .section.one .soc-block img {
-    width: 4.6vw;
-  }
-  .section.one .background-oblako {
-    width: 42.8vw;
-    height: 28.5vw;
-    filter: blur(105px);
-  }
-}
-@media (min-width: 500px) and (max-width: 900px) {
-  .section.one h1 {
-    width: 71vw;
-    font-size: 8vw;
-    margin-top: 42px;
-  }
-  .section.one p {
-    width: 75vw;
-  }
-  .section.one .soc-block img {
-    width: 6vw;
-  }
-  .section.one .background-oblako {
-    width: 42.8vw;
-    height: 28.5vw;
-    filter: blur(80px);
-  }
-}
-@media (max-width: 500px) {
-  .section.one h1 {
-    width: 80vw;
-    font-size: 10.3vw;
-    margin-top: 22px;
-    text-shadow: #A0D2E8 0 0 4px;
-  }
-  .section.one p {
-    width: 80vw;
-    font-size: 4vw;
-  }
-  .section.one .soc-block img {
-    width: 12vw;
-  }
-  .section.one .background-oblako {
-    width: 80.8vw;
-    height: 50.5vw;
-    filter: blur(50px);
-  }
-}
-.section.one {
+.desktop .section.one {
   position: relative;
   background-color: #242424;
   display: flex;
@@ -63,47 +6,62 @@
   width: 100wv;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 2.5vw 0;
 }
-.section.one span {
+.desktop .section.one span {
   z-index: 2;
   display: block;
   width: 90vw;
-  height: 1px;
+  height: 0.083vw;
   background-color: #eff1ed;
 }
-.section.one h1 {
+.desktop .section.one h1 {
   animation: anim_header 0.8s ease;
   text-align: center;
   z-index: 2;
-  width: 100%;
-  margin-bottom: 17px;
+  margin-top: 5.1666vw;
+  font-size: 9.5vw;
+  margin-bottom: 1.41666vw;
   font-family: "BICRO";
   color: #eff1ed;
-  -webkit-text-stroke: 1px #eff1ed;
-  text-stroke: 1px #eff1ed;
+  -webkit-text-stroke: 0.083vw #eff1ed;
+  text-stroke: 0.083vw #eff1ed;
   text-transform: uppercase;
-  text-shadow: #A0D2E8 0 0 9px;
+  text-shadow: #A0D2E8 0 0 0.75vw;
 }
-.section.one p {
+.desktop .section.one p {
   animation: anim2 0.8s ease;
   text-align: center;
   z-index: 2;
   font-weight: bold;
+  width: 60vw;
+  font-size: 1.67vw;
   color: #eff1ed;
   font-family: "MONO";
-  margin-bottom: 36px;
+  margin-bottom: 3vw;
 }
-.section.one .soc-block {
+.desktop .section.one p a, .desktop .section.one p a:hover, .desktop .section.one p a:active {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #eff1ed;
+}
+.desktop .section.one .soc-block {
   animation: anim2 0.8s ease;
   z-index: 2;
   display: flex;
-  gap: 37px;
-  margin-bottom: 36px;
+  gap: 3vw;
+  margin-bottom: 3vw;
 }
-.section.one .background-oblako {
+.desktop .section.one .soc-block img {
+  width: 4.6vw;
+}
+.desktop .section.one .background-oblako {
+  width: 42.8vw;
+  height: 28.5vw;
   position: absolute;
   z-index: 1;
+  filter: blur(8.75vw);
+  animation: rotate 5s linear infinite, pulse 2s ease-in-out infinite;
 }
 
 @keyframes anim_header {
@@ -141,6 +99,22 @@
   }
   100% {
     filter: blur(0px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px);
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
